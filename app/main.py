@@ -29,9 +29,6 @@ app.mount("/static", StaticFiles(directory=str(BASE_DIR / "static")), name="stat
 
 contact_rate_limiter = RateLimiter(max_requests=5, window_seconds=600)
 
-# Замени ссылки на реальные, когда запушишь соответствующие репозитории —
-# названия ниже совпадают с теми, что уже обсуждались и собирались в этом
-# портфолио, но GitHub-адрес нужно проверить самой перед деплоем.
 PROJECTS = [
     {
         "name": "LLM RAG Assistant",
