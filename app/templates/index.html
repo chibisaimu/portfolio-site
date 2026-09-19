@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Алина Кучменова — Python/Go-разработчик</title>
+  <meta name="description" content="Python и Go-разработчик: AI-автоматизация, backend, боты. Портфолио и контакты." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ink: '#151B26',
+            'ink-panel': '#1C2430',
+            'ink-text': '#EDEFF2',
+            'ink-muted': '#8A93A1',
+            hairline: '#2A333F',
+            accent: '#E8B04B',
+            'accent-hover': '#F2C368',
+          },
+          fontFamily: {
+            serif: ['Fraunces', 'Georgia', 'serif'],
+            sans: ['"IBM Plex Sans"', 'system-ui', 'sans-serif'],
+          },
+        },
+      },
+    };
+  </script>
+  <link rel="stylesheet" href="/static/css/styles.css" />
+</head>
+<body class="bg-ink text-ink-text font-sans antialiased">
+
+  <!-- NAV -->
+  <header class="border-b border-hairline">
+    <div class="max-w-3xl mx-auto px-6 py-5 flex items-center justify-between">
+      <span class="font-serif text-lg">Алина Кучменова</span>
+      <nav class="flex gap-5 text-sm text-ink-muted">
+        <a href="https://github.com/chibisaimu" class="hover:text-ink-text transition-colors">GitHub</a>
+        <a href="https://t.me/chibisaimu" class="hover:text-ink-text transition-colors">Telegram</a>
+        <a href="mailto:aline.kuchmenova@yandex.ru" class="hover:text-ink-text transition-colors">Email</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="max-w-3xl mx-auto px-6 pt-16 pb-14 hero-enter">
+    <h1 class="font-serif text-4xl sm:text-5xl leading-tight">
+      Пишу backend и AI-автоматизацию,<br class="hidden sm:block" /> которой реально пользуются.
+    </h1>
+    <p class="mt-5 text-accent text-lg">Python · Go · LLM-автоматизация</p>
+    <p class="mt-4 max-w-[60ch] text-ink-muted leading-relaxed">
+      Год опыта в реальном бизнес-контексте: автоматизировала процессы, внедряла LLM-решения
+      в продакшен и доводила их до результата, которым пользуются в компании. Сейчас расширяю
+      стек в сторону Go и учусь глубже в системном программировании.
+    </p>
+    <div class="mt-8 flex gap-4">
+      <a href="#projects" class="px-5 py-2.5 bg-accent text-ink font-medium hover:bg-accent-hover transition-colors">
+        Смотреть проекты
+      </a>
+      <a href="#contact" class="px-5 py-2.5 border border-hairline hover:border-ink-muted transition-colors">
+        Связаться
+      </a>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="max-w-3xl mx-auto px-6 py-12 border-t border-hairline">
+    <h2 class="font-serif text-2xl mb-4">Обо мне</h2>
+    <p class="max-w-[65ch] text-ink-muted leading-relaxed">
+      Выпускница РТУ МИРЭА (Институт искусственного интеллекта). В небольшой ИТ-команде
+      часто брала задачи целиком — от идеи до внедрения — и отвечала за результат сама:
+      распознавание фото для мерчандайзеров, LLM-бот на корпоративном сайте, сервис
+      автоматизации документооборота. Дипломный проект — автономный робот для
+      фитосанитарного мониторинга теплиц, с компьютерным зрением и локализацией на
+      расширенном фильтре Калмана.
+    </p>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="max-w-3xl mx-auto px-6 py-12 border-t border-hairline">
+    <h2 class="font-serif text-2xl mb-6">Навыки</h2>
+    <div class="grid sm:grid-cols-3 gap-8">
+      <div>
+        <h3 class="text-sm font-medium text-ink-text mb-3">AI / LLM</h3>
+        <ul class="space-y-1.5 text-ink-muted text-sm leading-relaxed">
+          <li>Промпт-инжиниринг (zero-shot, few-shot, CoT)</li>
+          <li>Интеграция LLM API</li>
+          <li>RAG, векторный поиск</li>
+          <li>Оценка качества ответов</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-sm font-medium text-ink-text mb-3">ML / CV</h3>
+        <ul class="space-y-1.5 text-ink-muted text-sm leading-relaxed">
+          <li>PyTorch, OpenCV</li>
+          <li>CNN, transfer learning</li>
+          <li>NumPy, pandas</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-sm font-medium text-ink-text mb-3">Backend</h3>
+        <ul class="space-y-1.5 text-ink-muted text-sm leading-relaxed">
+          <li>Python, Go, SQL</li>
+          <li>REST API, PostgreSQL</li>
+          <li>Docker, Git, Linux</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="max-w-3xl mx-auto px-6 py-12 border-t border-hairline">
+    <h2 class="font-serif text-2xl mb-6">Проекты</h2>
+    <div class="divide-y divide-hairline">
+
+      {% for project in projects %}
+      <div class="py-6 first:pt-0">
+        <div class="flex items-baseline justify-between gap-4 flex-wrap">
+          <h3 class="font-serif text-xl">{{ project.name }}</h3>
+          <a href="{{ project.url }}" class="text-sm text-accent hover:text-accent-hover transition-colors whitespace-nowrap">
+            Код на GitHub
+          </a>
+        </div>
+        <p class="mt-2 text-ink-muted text-sm leading-relaxed max-w-[65ch]">{{ project.description }}</p>
+        <div class="mt-3 flex flex-wrap gap-2">
+          {% for tag in project.stack %}
+          <span class="text-xs px-2 py-1 border border-hairline text-ink-muted">{{ tag }}</span>
+          {% endfor %}
+        </div>
+      </div>
+      {% endfor %}
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="max-w-3xl mx-auto px-6 py-14 border-t border-hairline">
+    <h2 class="font-serif text-2xl mb-3">Связаться</h2>
+    <p class="text-ink-muted mb-8 max-w-[55ch]">
+      Пишите напрямую в
+      <a href="https://t.me/chibisaimu" class="text-accent hover:text-accent-hover transition-colors">Telegram</a>
+      или на <a href="mailto:aline.kuchmenova@yandex.ru" class="text-accent hover:text-accent-hover transition-colors">email</a>,
+      либо оставьте сообщение здесь.
+    </p>
+
+    {% if success %}
+    <div class="border border-accent text-accent px-4 py-3 mb-6 max-w-[55ch]">
+      Спасибо! Сообщение отправлено, отвечу в ближайшее время.
+    </div>
+    {% endif %}
+
+    {% if errors.get('__all__') %}
+    <div class="border border-red-400 text-red-300 px-4 py-3 mb-6 max-w-[55ch]">
+      {{ errors['__all__'] }}
+    </div>
+    {% endif %}
+
+    <form method="post" action="/contact" class="max-w-[55ch] space-y-4">
+      <div>
+        <label for="name" class="block text-sm text-ink-muted mb-1.5">Имя</label>
+        <input type="text" id="name" name="name" required value="{{ form.get('name', '') }}"
+          class="w-full bg-ink-panel border border-hairline px-3 py-2.5 focus:outline-none focus:border-accent transition-colors" />
+        {% if errors.get('name') %}<p class="text-red-300 text-xs mt-1">{{ errors['name'] }}</p>{% endif %}
+      </div>
+
+      <div>
+        <label for="contact" class="block text-sm text-ink-muted mb-1.5">Email или Telegram</label>
+        <input type="text" id="contact" name="contact" required value="{{ form.get('contact', '') }}"
+          class="w-full bg-ink-panel border border-hairline px-3 py-2.5 focus:outline-none focus:border-accent transition-colors" />
+        {% if errors.get('contact') %}<p class="text-red-300 text-xs mt-1">{{ errors['contact'] }}</p>{% endif %}
+      </div>
+
+      <div>
+        <label for="message" class="block text-sm text-ink-muted mb-1.5">Сообщение</label>
+        <textarea id="message" name="message" rows="4"
+          class="w-full bg-ink-panel border border-hairline px-3 py-2.5 focus:outline-none focus:border-accent transition-colors">{{ form.get('message', '') }}</textarea>
+      </div>
+
+      <!-- honeypot: скрыто от людей, видно ботам, которые заполняют все поля подряд -->
+      <div class="hp-field" aria-hidden="true">
+        <label for="website">Website</label>
+        <input type="text" id="website" name="website" tabindex="-1" autocomplete="off" />
+      </div>
+
+      <button type="submit" class="px-5 py-2.5 bg-accent text-ink font-medium hover:bg-accent-hover transition-colors">
+        Отправить
+      </button>
+    </form>
+  </section>
+
+  <footer class="border-t border-hairline">
+    <div class="max-w-3xl mx-auto px-6 py-6 text-xs text-ink-muted">
+      Алина Кучменова, {{ year }}
+    </div>
+  </footer>
+
+</body>
+</html>
